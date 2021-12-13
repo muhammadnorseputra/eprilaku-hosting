@@ -1,0 +1,8 @@
+http://localhost:81/ekinerja/C_user/skp_bulanan ok
+http://localhost:81/ekinerja/C_atasan/skp_bulanan_bawahan okk
+http://localhost:81/ekinerja/C_atasan/nilai_perilaku
+http://localhost:81/ekinerja/C_user/harian_skp
+http://localhost:81/ekinerja/C_atasan/utama_skp_harian ok
+http://localhost:81/ekinerja/C_user/tugas_tambahan
+http://localhost:81/ekinerja/C_user/kreatifitas
+http://localhost:81/ekinerja/C_atasan/staff_bawahan

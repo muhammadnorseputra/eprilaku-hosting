@@ -1,0 +1,43 @@
+RewriteEngine on
+
+RewriteCond $1 !^(index\.php|public|\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?$1
+
+AddType audio/mpeg mp3
+AddType audio/mp4 m4a
+AddType audio/ogg ogg
+AddType audio/ogg oga
+AddType audio/webm webma
+AddType audio/wav wav
+ 
+AddType video/mp4 mp4
+AddType video/mp4 m4v
+AddType video/ogg ogv
+AddType video/webm webm
+AddType video/webm webmv
+
+#http to https : script dari RumahWeb
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+deny from 103.247.8.1
+deny from 103.247.8.2/31
+deny from 103.247.8.4/30
+deny from 103.247.8.8/29
+deny from 103.247.8.16/28
+deny from 103.247.8.32/27
+deny from 103.247.8.64/27
+deny from 103.247.8.96/30
+deny from 103.247.8.100
+deny from 93.158.90.101
+deny from 157.90.209.83
+deny from 103.91.59.10
+deny from 104.223.158.2
+deny from 5.9.18.115
+deny from 18.232.165.222
